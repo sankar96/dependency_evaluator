@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <string name="enter_text_or_formula">Enter Text Or Formula</string>
+</resources>

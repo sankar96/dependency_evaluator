@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <EditText
+            android:id="@+id/formulaEditText"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/enter_text_or_formula"
+            android:textColorHint="@color/fontGrey"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textColor="@color/fontGrey"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:imeOptions="actionDone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/cell_shape"
+                android:stretchColumns="*">
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/cell_shape" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="A" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:text="B" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:text="C" />
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:text="D" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:id="@+id/rowSelector1"
+                        android:layout_gravity="center_horizontal"
+                        android:text="1" />
+
+                    <EditText
+                        android:id="@+id/editTextA1"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextB1"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC1"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD1"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="2" />
+
+                    <EditText
+                        android:id="@+id/editTextA2"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextB2"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextC2"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextD2"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="3" />
+
+                    <EditText
+                        android:id="@+id/editTextA3"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB3"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC3"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD3"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="4" />
+
+                    <EditText
+                        android:id="@+id/editTextA4"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB4"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC4"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD4"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="5" />
+
+                    <EditText
+                        android:id="@+id/editTextA5"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB5"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC5"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD5"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="6" />
+
+                    <EditText
+                        android:id="@+id/editTextA6"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB6"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC6"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD6"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="7" />
+
+                    <EditText
+                        android:id="@+id/editTextA7"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB7"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC7"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD7"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="8" />
+
+                    <EditText
+                        android:id="@+id/editTextA8"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB8"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC8"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD8"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="9" />
+
+                    <EditText
+                        android:id="@+id/editTextA9"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB9"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC9"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD9"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="10" />
+
+                    <EditText
+                        android:id="@+id/editTextA10"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB10"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC10"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD10"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="11" />
+
+                    <EditText
+                        android:id="@+id/editTextA11"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB11"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC11"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD11"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="12" />
+
+                    <EditText
+                        android:id="@+id/editTextA12"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB12"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC12"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD12"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="13" />
+
+                    <EditText
+                        android:id="@+id/editTextA13"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB13"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC13"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD13"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="14" />
+
+                    <EditText
+                        android:id="@+id/editTextA14"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB14"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC14"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD14"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="15" />
+
+                    <EditText
+                        android:id="@+id/editTextA15"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB15"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC15"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD15"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="16" />
+
+                    <EditText
+                        android:id="@+id/editTextA16"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB16"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC16"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD16"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="17" />
+
+                    <EditText
+                        android:id="@+id/editTextA17"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB17"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC17"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD17"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="18" />
+
+                    <EditText
+                        android:id="@+id/editTextA18"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB18"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC18"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD18"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="19" />
+
+                    <EditText
+                        android:id="@+id/editTextA19"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB19"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC19"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD19"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+                <TableRow android:background="@drawable/cell_header_shape">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_span="0"
+                        android:text="20" />
+
+                    <EditText
+                        android:id="@+id/editTextA20"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"  />
+
+                    <EditText
+                        android:id="@+id/editTextB20"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/editTextC20"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextD20"
+                        android:background="@drawable/cell_shape"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:inputType="textAutoComplete"
+                        android:singleLine="true" />
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
